@@ -7,19 +7,41 @@ enum MallItemState{
 	UNSELL	
 }
 
-struct MallItem{
-	1: i32 itemId
-	2: byte category
-	3: string itemName
-	/** 永久物品的货币数量*/
-	4: double currency
-	/** 是否限数量*/
-	5: bool isLimit
-	/** 上架时间*/
-	6: i64 openTime
-	7: list<string> names
-	//多语言提示ID
-	8: i16 langId
-	9:MallItemState state
-	10: map<byte, byte> changedPoses
+enum BuildState{
+	BUILDING
+	PRODUCING
+	UPDATING
+	RESEARCHING
+}
+
+enum MessageType {
+}
+
+enum ErrorType {
+}
+
+enum BattlePropertyType {
+}
+
+struct ServerInfo{
+	1: string ip
+	2: string ports
+	3: string name
+}
+
+struct BuildInfo {
+        1: string id
+	2: string tmplId
+	3: i16 lvl
+	4: i16 pos
+	5: BuildState state
+	6: i16 leftTime
+	7: string produceId
+}
+
+struct BoatInfo {
+	1: string id
+	2: string tmplId
+	3: byte pos
+	4: i16 count
 }
