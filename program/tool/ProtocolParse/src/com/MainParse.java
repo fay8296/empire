@@ -331,7 +331,7 @@ public class MainParse {
 					"#define XF_MessageFactory_h\n"+
 					"#include \"ByteBuffer.h\"\n"+
 					"#include \"MsgType.h\"\n"+
-					"#include \"Service.h\"\n"+
+					"#include \"GameService.h\"\n"+
 					"class MessageFactory\n"+
 					"{\n"+
 					"public:\n"+
@@ -385,7 +385,7 @@ public class MainParse {
 			}
 			cpp_factory_path_cpp_out.println("		default:break;");
 			cpp_factory_path_cpp_out.println("	}");
-			cpp_factory_path_cpp_out.println("	Service::shareService()->disPatchMsg(msg_type, msg_obj);");
+			cpp_factory_path_cpp_out.println("	GameService::shareService()->disPatchMsg(msg_type, msg_obj);");
 			cpp_factory_path_cpp_out.println("}");
 			cpp_factory_path_cpp_out.close();
 			

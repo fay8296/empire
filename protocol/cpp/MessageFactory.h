@@ -3,7 +3,7 @@
 #define XF_MessageFactory_h
 #include "ByteBuffer.h"
 #include "MsgType.h"
-#include "Service.h"
+#include "GameService.h"
 class MessageFactory
 {
 public:

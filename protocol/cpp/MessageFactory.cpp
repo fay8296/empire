@@ -33,5 +33,5 @@ void MessageFactory::parseMsg(ByteBuffer* buf)
 		}
 		default:break;
 	}
-	Service::shareService()->disPatchMsg(msg_type, msg_obj);
+	GameService::shareService()->disPatchMsg(msg_type, msg_obj);
 }
