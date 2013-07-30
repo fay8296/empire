@@ -4,10 +4,12 @@
 #include "Knighthood.h"
 #include "Goods.h"
 #include "Rule.h"
+#include "JiaSu.h"
 #include "Build.h"
 #include "BuildCondition.h"
-#include "Language.h"
 #include "Boat.h"
+#include "Keji.h"
+#include "Language.h"
 static TemplateFactory* factory=NULL;
 TemplateFactory* TemplateFactory::shareTemplateFactory()
 {
@@ -35,6 +37,10 @@ TemplateInterface* TemplateFactory::createTemplateObj(std::string templateName)
 		{
 			return new Rule();
 		}
+		else if(templateName.compare("JiaSu")==0)
+		{
+			return new JiaSu();
+		}
 		else if(templateName.compare("Build")==0)
 		{
 			return new Build();
@@ -43,13 +49,17 @@ TemplateInterface* TemplateFactory::createTemplateObj(std::string templateName)
 		{
 			return new BuildCondition();
 		}
-		else if(templateName.compare("Language")==0)
-		{
-			return new Language();
-		}
 		else if(templateName.compare("Boat")==0)
 		{
 			return new Boat();
+		}
+		else if(templateName.compare("Keji")==0)
+		{
+			return new Keji();
+		}
+		else if(templateName.compare("Language")==0)
+		{
+			return new Language();
 		}
 		else{return NULL;}
 }

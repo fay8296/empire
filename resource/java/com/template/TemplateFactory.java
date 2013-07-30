@@ -30,6 +30,10 @@ public static TemplateFactory templateFactory=null;
 		{
 			return new Rule();
 		}
+		else if(templateName.equals("JiaSu"))
+		{
+			return new JiaSu();
+		}
 		else if(templateName.equals("Build"))
 		{
 			return new Build();
@@ -38,13 +42,17 @@ public static TemplateFactory templateFactory=null;
 		{
 			return new BuildCondition();
 		}
-		else if(templateName.equals("Language"))
-		{
-			return new Language();
-		}
 		else if(templateName.equals("Boat"))
 		{
 			return new Boat();
+		}
+		else if(templateName.equals("Keji"))
+		{
+			return new Keji();
+		}
+		else if(templateName.equals("Language"))
+		{
+			return new Language();
 		}
 		else{return null;}
 	}
