@@ -1,0 +1,9 @@
+import "struct.proto";
+
+package com.empire.msg.auto.cs;
+
+message CSQuickLoginMsg{
+	optional int32 deviceType = 1;
+	optional string deviceId =2;	
+}
+
