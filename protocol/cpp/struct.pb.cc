@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 
 namespace {
 
@@ -146,20 +145,19 @@ void protobuf_AddDesc_struct_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\014struct.proto\022\023com.empire.msg.auto\"5\n\nS"
-    "erverInfo\022\n\n\002ip\030\001 \001(\t\022\r\n\005ports\030\002 \001(\t\022\014\n\004"
-    "name\030\003 \001(\t\"\226\001\n\tBuildInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006"
-    "tmplId\030\002 \001(\t\022\013\n\003lvl\030\003 \001(\005\022\013\n\003pos\030\004 \001(\005\022."
-    "\n\005state\030\005 \001(\0162\037.com.empire.msg.auto.Buil"
-    "dState\022\020\n\010leftTime\030\006 \001(\005\022\021\n\tproduceId\030\007 "
-    "\001(\t\"B\n\010BoatInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006tmplId\030\002 "
-    "\001(\t\022\013\n\003pos\030\003 \001(\005\022\r\n\005count\030\004 \001(\005*%\n\rMallI"
-    "temState\022\010\n\004SELL\020\000\022\n\n\006UNSELL\020\001*H\n\nBuildS"
-    "tate\022\014\n\010BUILDING\020\000\022\r\n\tPRODUCING\020\001\022\014\n\010UPD"
-    "ATING\020\002\022\017\n\013RESEARCHING\020\003*!\n\013MessageType\022"
-    "\022\n\016CS_USER_PASSWD\020\001*\034\n\tErrorType\022\017\n\013NET_"
-    "DISCONN\020\001*\036\n\022BattlePropertyType\022\010\n\004TEST\020"
-    "\001", 521);
+    "\n\014struct.proto\022\016com.empire.msg\"5\n\nServer"
+    "Info\022\n\n\002ip\030\001 \001(\t\022\r\n\005ports\030\002 \001(\t\022\014\n\004name\030"
+    "\003 \001(\t\"\221\001\n\tBuildInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006tmplI"
+    "d\030\002 \001(\t\022\013\n\003lvl\030\003 \001(\005\022\013\n\003pos\030\004 \001(\005\022)\n\005sta"
+    "te\030\005 \001(\0162\032.com.empire.msg.BuildState\022\020\n\010"
+    "leftTime\030\006 \001(\005\022\021\n\tproduceId\030\007 \001(\t\"B\n\010Boa"
+    "tInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006tmplId\030\002 \001(\t\022\013\n\003pos"
+    "\030\003 \001(\005\022\r\n\005count\030\004 \001(\005*%\n\rMallItemState\022\010"
+    "\n\004SELL\020\000\022\n\n\006UNSELL\020\001*H\n\nBuildState\022\014\n\010BU"
+    "ILDING\020\000\022\r\n\tPRODUCING\020\001\022\014\n\010UPDATING\020\002\022\017\n"
+    "\013RESEARCHING\020\003*!\n\013MessageType\022\022\n\016CS_USER"
+    "_PASSWD\020\001*\034\n\tErrorType\022\017\n\013NET_DISCONN\020\001*"
+    "\036\n\022BattlePropertyType\022\010\n\004TEST\020\001", 511);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "struct.proto", &protobuf_RegisterTypes);
   ServerInfo::default_instance_ = new ServerInfo();
@@ -760,7 +758,7 @@ bool BuildInfo::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .com.empire.msg.auto.BuildState state = 5;
+      // optional .com.empire.msg.BuildState state = 5;
       case 5: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -769,8 +767,8 @@ bool BuildInfo::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          if (::com::empire::msg::auto::BuildState_IsValid(value)) {
-            set_state(static_cast< ::com::empire::msg::auto::BuildState >(value));
+          if (::com::empire::msg::BuildState_IsValid(value)) {
+            set_state(static_cast< ::com::empire::msg::BuildState >(value));
           } else {
             mutable_unknown_fields()->AddVarint(5, value);
           }
@@ -860,7 +858,7 @@ void BuildInfo::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->pos(), output);
   }
 
-  // optional .com.empire.msg.auto.BuildState state = 5;
+  // optional .com.empire.msg.BuildState state = 5;
   if (has_state()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       5, this->state(), output);
@@ -918,7 +916,7 @@ void BuildInfo::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->pos(), target);
   }
 
-  // optional .com.empire.msg.auto.BuildState state = 5;
+  // optional .com.empire.msg.BuildState state = 5;
   if (has_state()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       5, this->state(), target);
@@ -978,7 +976,7 @@ int BuildInfo::ByteSize() const {
           this->pos());
     }
 
-    // optional .com.empire.msg.auto.BuildState state = 5;
+    // optional .com.empire.msg.BuildState state = 5;
     if (has_state()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
@@ -1455,7 +1453,6 @@ void BoatInfo::Swap(BoatInfo* other) {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

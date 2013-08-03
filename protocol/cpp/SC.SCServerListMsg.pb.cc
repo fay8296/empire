@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 namespace {
@@ -82,12 +81,12 @@ void protobuf_AddDesc_SC_2eSCServerListMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\030SC.SCServerListMsg.proto\022\026com.empire.m"
-    "sg.auto.sc\032\014struct.proto\"S\n\017SCServerList"
-    "Msg\022\n\n\002id\030\001 \001(\005\0224\n\013serverInfos\030\002 \003(\0132\037.c"
-    "om.empire.msg.auto.ServerInfo", 149);
+    "\n\030SC.SCServerListMsg.proto\022\021com.empire.m"
+    "sg.sc\032\014struct.proto\"N\n\017SCServerListMsg\022\n"
+    "\n\002id\030\001 \001(\005\022/\n\013serverInfos\030\002 \003(\0132\032.com.em"
+    "pire.msg.ServerInfo", 139);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "SC.SCServerListMsg.proto", &protobuf_RegisterTypes);
   SCServerListMsg::default_instance_ = new SCServerListMsg();
@@ -189,7 +188,7 @@ bool SCServerListMsg::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+      // repeated .com.empire.msg.ServerInfo serverInfos = 2;
       case 2: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -227,7 +226,7 @@ void SCServerListMsg::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
   }
 
-  // repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+  // repeated .com.empire.msg.ServerInfo serverInfos = 2;
   for (int i = 0; i < this->serverinfos_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, this->serverinfos(i), output);
@@ -246,7 +245,7 @@ void SCServerListMsg::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->id(), target);
   }
 
-  // repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+  // repeated .com.empire.msg.ServerInfo serverInfos = 2;
   for (int i = 0; i < this->serverinfos_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
@@ -272,7 +271,7 @@ int SCServerListMsg::ByteSize() const {
     }
 
   }
-  // repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+  // repeated .com.empire.msg.ServerInfo serverInfos = 2;
   total_size += 1 * this->serverinfos_size();
   for (int i = 0; i < this->serverinfos_size(); i++) {
     total_size +=
@@ -353,7 +352,6 @@ void SCServerListMsg::Swap(SCServerListMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

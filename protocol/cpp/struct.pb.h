@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 
 // Internal implementation detail -- do not call these.
 void  protobuf_AddDesc_struct_2eproto();
@@ -227,7 +226,7 @@ class ServerInfo : public ::google::protobuf::Message {
   inline ::std::string* release_name();
   inline void set_allocated_name(::std::string* name);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.ServerInfo)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.ServerInfo)
  private:
   inline void set_has_ip();
   inline void clear_has_ip();
@@ -346,12 +345,12 @@ class BuildInfo : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 pos() const;
   inline void set_pos(::google::protobuf::int32 value);
 
-  // optional .com.empire.msg.auto.BuildState state = 5;
+  // optional .com.empire.msg.BuildState state = 5;
   inline bool has_state() const;
   inline void clear_state();
   static const int kStateFieldNumber = 5;
-  inline ::com::empire::msg::auto::BuildState state() const;
-  inline void set_state(::com::empire::msg::auto::BuildState value);
+  inline ::com::empire::msg::BuildState state() const;
+  inline void set_state(::com::empire::msg::BuildState value);
 
   // optional int32 leftTime = 6;
   inline bool has_lefttime() const;
@@ -372,7 +371,7 @@ class BuildInfo : public ::google::protobuf::Message {
   inline ::std::string* release_produceid();
   inline void set_allocated_produceid(::std::string* produceid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.BuildInfo)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.BuildInfo)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -503,7 +502,7 @@ class BoatInfo : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 count() const;
   inline void set_count(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.BoatInfo)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.BoatInfo)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -936,7 +935,7 @@ inline void BuildInfo::set_pos(::google::protobuf::int32 value) {
   pos_ = value;
 }
 
-// optional .com.empire.msg.auto.BuildState state = 5;
+// optional .com.empire.msg.BuildState state = 5;
 inline bool BuildInfo::has_state() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -950,11 +949,11 @@ inline void BuildInfo::clear_state() {
   state_ = 0;
   clear_has_state();
 }
-inline ::com::empire::msg::auto::BuildState BuildInfo::state() const {
-  return static_cast< ::com::empire::msg::auto::BuildState >(state_);
+inline ::com::empire::msg::BuildState BuildInfo::state() const {
+  return static_cast< ::com::empire::msg::BuildState >(state_);
 }
-inline void BuildInfo::set_state(::com::empire::msg::auto::BuildState value) {
-  assert(::com::empire::msg::auto::BuildState_IsValid(value));
+inline void BuildInfo::set_state(::com::empire::msg::BuildState value) {
+  assert(::com::empire::msg::BuildState_IsValid(value));
   set_has_state();
   state_ = value;
 }
@@ -1242,7 +1241,6 @@ inline void BoatInfo::set_count(::google::protobuf::int32 value) {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com
@@ -1252,24 +1250,24 @@ namespace google {
 namespace protobuf {
 
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::auto::MallItemState>() {
-  return ::com::empire::msg::auto::MallItemState_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::MallItemState>() {
+  return ::com::empire::msg::MallItemState_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::auto::BuildState>() {
-  return ::com::empire::msg::auto::BuildState_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::BuildState>() {
+  return ::com::empire::msg::BuildState_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::auto::MessageType>() {
-  return ::com::empire::msg::auto::MessageType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::MessageType>() {
+  return ::com::empire::msg::MessageType_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::auto::ErrorType>() {
-  return ::com::empire::msg::auto::ErrorType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::ErrorType>() {
+  return ::com::empire::msg::ErrorType_descriptor();
 }
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::auto::BattlePropertyType>() {
-  return ::com::empire::msg::auto::BattlePropertyType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::com::empire::msg::BattlePropertyType>() {
+  return ::com::empire::msg::BattlePropertyType_descriptor();
 }
 
 }  // namespace google

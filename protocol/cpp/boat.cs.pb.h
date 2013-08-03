@@ -29,7 +29,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 // Internal implementation detail -- do not call these.
@@ -107,7 +106,7 @@ class CSQueryBoatInfoMsg : public ::google::protobuf::Message {
   inline ::std::string* release_boatid();
   inline void set_allocated_boatid(::std::string* boatid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSQueryBoatInfoMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSQueryBoatInfoMsg)
  private:
   inline void set_has_boatid();
   inline void clear_has_boatid();
@@ -207,7 +206,6 @@ inline void CSQueryBoatInfoMsg::set_allocated_boatid(::std::string* boatid) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

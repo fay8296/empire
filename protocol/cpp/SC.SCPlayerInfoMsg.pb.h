@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 // Internal implementation detail -- do not call these.
@@ -180,28 +179,28 @@ class SCPlayerInfoMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int64 magicstone() const;
   inline void set_magicstone(::google::protobuf::int64 value);
 
-  // repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+  // repeated .com.empire.msg.BuildInfo buildInfos = 13;
   inline int buildinfos_size() const;
   inline void clear_buildinfos();
   static const int kBuildInfosFieldNumber = 13;
-  inline const ::com::empire::msg::auto::BuildInfo& buildinfos(int index) const;
-  inline ::com::empire::msg::auto::BuildInfo* mutable_buildinfos(int index);
-  inline ::com::empire::msg::auto::BuildInfo* add_buildinfos();
-  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BuildInfo >&
+  inline const ::com::empire::msg::BuildInfo& buildinfos(int index) const;
+  inline ::com::empire::msg::BuildInfo* mutable_buildinfos(int index);
+  inline ::com::empire::msg::BuildInfo* add_buildinfos();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BuildInfo >&
       buildinfos() const;
-  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BuildInfo >*
+  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BuildInfo >*
       mutable_buildinfos();
 
-  // repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+  // repeated .com.empire.msg.BoatInfo boatInfos = 14;
   inline int boatinfos_size() const;
   inline void clear_boatinfos();
   static const int kBoatInfosFieldNumber = 14;
-  inline const ::com::empire::msg::auto::BoatInfo& boatinfos(int index) const;
-  inline ::com::empire::msg::auto::BoatInfo* mutable_boatinfos(int index);
-  inline ::com::empire::msg::auto::BoatInfo* add_boatinfos();
-  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BoatInfo >&
+  inline const ::com::empire::msg::BoatInfo& boatinfos(int index) const;
+  inline ::com::empire::msg::BoatInfo* mutable_boatinfos(int index);
+  inline ::com::empire::msg::BoatInfo* add_boatinfos();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BoatInfo >&
       boatinfos() const;
-  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BoatInfo >*
+  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BoatInfo >*
       mutable_boatinfos();
 
   // optional int64 vipLvl = 15;
@@ -223,7 +222,7 @@ class SCPlayerInfoMsg : public ::google::protobuf::Message {
   inline ::std::string* release_name();
   inline void set_allocated_name(::std::string* name);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCPlayerInfoMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCPlayerInfoMsg)
  private:
   inline void set_has_sex();
   inline void clear_has_sex();
@@ -268,8 +267,8 @@ class SCPlayerInfoMsg : public ::google::protobuf::Message {
   ::google::protobuf::int64 tree_;
   ::google::protobuf::int64 oil_;
   ::google::protobuf::int64 magicstone_;
-  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BuildInfo > buildinfos_;
-  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BoatInfo > boatinfos_;
+  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BuildInfo > buildinfos_;
+  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BoatInfo > boatinfos_;
   ::google::protobuf::int64 viplvl_;
   ::std::string* name_;
 
@@ -554,52 +553,52 @@ inline void SCPlayerInfoMsg::set_magicstone(::google::protobuf::int64 value) {
   magicstone_ = value;
 }
 
-// repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+// repeated .com.empire.msg.BuildInfo buildInfos = 13;
 inline int SCPlayerInfoMsg::buildinfos_size() const {
   return buildinfos_.size();
 }
 inline void SCPlayerInfoMsg::clear_buildinfos() {
   buildinfos_.Clear();
 }
-inline const ::com::empire::msg::auto::BuildInfo& SCPlayerInfoMsg::buildinfos(int index) const {
+inline const ::com::empire::msg::BuildInfo& SCPlayerInfoMsg::buildinfos(int index) const {
   return buildinfos_.Get(index);
 }
-inline ::com::empire::msg::auto::BuildInfo* SCPlayerInfoMsg::mutable_buildinfos(int index) {
+inline ::com::empire::msg::BuildInfo* SCPlayerInfoMsg::mutable_buildinfos(int index) {
   return buildinfos_.Mutable(index);
 }
-inline ::com::empire::msg::auto::BuildInfo* SCPlayerInfoMsg::add_buildinfos() {
+inline ::com::empire::msg::BuildInfo* SCPlayerInfoMsg::add_buildinfos() {
   return buildinfos_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BuildInfo >&
+inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BuildInfo >&
 SCPlayerInfoMsg::buildinfos() const {
   return buildinfos_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BuildInfo >*
+inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BuildInfo >*
 SCPlayerInfoMsg::mutable_buildinfos() {
   return &buildinfos_;
 }
 
-// repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+// repeated .com.empire.msg.BoatInfo boatInfos = 14;
 inline int SCPlayerInfoMsg::boatinfos_size() const {
   return boatinfos_.size();
 }
 inline void SCPlayerInfoMsg::clear_boatinfos() {
   boatinfos_.Clear();
 }
-inline const ::com::empire::msg::auto::BoatInfo& SCPlayerInfoMsg::boatinfos(int index) const {
+inline const ::com::empire::msg::BoatInfo& SCPlayerInfoMsg::boatinfos(int index) const {
   return boatinfos_.Get(index);
 }
-inline ::com::empire::msg::auto::BoatInfo* SCPlayerInfoMsg::mutable_boatinfos(int index) {
+inline ::com::empire::msg::BoatInfo* SCPlayerInfoMsg::mutable_boatinfos(int index) {
   return boatinfos_.Mutable(index);
 }
-inline ::com::empire::msg::auto::BoatInfo* SCPlayerInfoMsg::add_boatinfos() {
+inline ::com::empire::msg::BoatInfo* SCPlayerInfoMsg::add_boatinfos() {
   return boatinfos_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BoatInfo >&
+inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BoatInfo >&
 SCPlayerInfoMsg::boatinfos() const {
   return boatinfos_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::BoatInfo >*
+inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::BoatInfo >*
 SCPlayerInfoMsg::mutable_boatinfos() {
   return &boatinfos_;
 }
@@ -700,7 +699,6 @@ inline void SCPlayerInfoMsg::set_allocated_name(::std::string* name) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

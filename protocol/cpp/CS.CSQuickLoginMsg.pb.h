@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 // Internal implementation detail -- do not call these.
@@ -115,7 +114,7 @@ class CSQuickLoginMsg : public ::google::protobuf::Message {
   inline ::std::string* release_deviceid();
   inline void set_allocated_deviceid(::std::string* deviceid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSQuickLoginMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSQuickLoginMsg)
  private:
   inline void set_has_devicetype();
   inline void clear_has_devicetype();
@@ -240,7 +239,6 @@ inline void CSQuickLoginMsg::set_allocated_deviceid(::std::string* deviceid) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 namespace {
@@ -82,12 +81,12 @@ void protobuf_AddDesc_boat_2esc_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\rboat.sc.proto\022\026com.empire.msg.auto.sc\032"
-    "\014struct.proto\"_\n\027SCBoatExtraBPropertyMsg"
-    "\0225\n\004type\030\001 \001(\0162\'.com.empire.msg.auto.Bat"
-    "tlePropertyType\022\r\n\005value\030\002 \001(\t", 150);
+    "\n\rboat.sc.proto\022\021com.empire.msg.sc\032\014stru"
+    "ct.proto\"Z\n\027SCBoatExtraBPropertyMsg\0220\n\004t"
+    "ype\030\001 \001(\0162\".com.empire.msg.BattlePropert"
+    "yType\022\r\n\005value\030\002 \001(\t", 140);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "boat.sc.proto", &protobuf_RegisterTypes);
   SCBoatExtraBPropertyMsg::default_instance_ = new SCBoatExtraBPropertyMsg();
@@ -182,7 +181,7 @@ bool SCBoatExtraBPropertyMsg::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional .com.empire.msg.auto.BattlePropertyType type = 1;
+      // optional .com.empire.msg.BattlePropertyType type = 1;
       case 1: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -190,8 +189,8 @@ bool SCBoatExtraBPropertyMsg::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          if (::com::empire::msg::auto::BattlePropertyType_IsValid(value)) {
-            set_type(static_cast< ::com::empire::msg::auto::BattlePropertyType >(value));
+          if (::com::empire::msg::BattlePropertyType_IsValid(value)) {
+            set_type(static_cast< ::com::empire::msg::BattlePropertyType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(1, value);
           }
@@ -237,7 +236,7 @@ bool SCBoatExtraBPropertyMsg::MergePartialFromCodedStream(
 
 void SCBoatExtraBPropertyMsg::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // optional .com.empire.msg.auto.BattlePropertyType type = 1;
+  // optional .com.empire.msg.BattlePropertyType type = 1;
   if (has_type()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
@@ -260,7 +259,7 @@ void SCBoatExtraBPropertyMsg::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SCBoatExtraBPropertyMsg::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // optional .com.empire.msg.auto.BattlePropertyType type = 1;
+  // optional .com.empire.msg.BattlePropertyType type = 1;
   if (has_type()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
@@ -287,7 +286,7 @@ int SCBoatExtraBPropertyMsg::ByteSize() const {
   int total_size = 0;
 
   if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional .com.empire.msg.auto.BattlePropertyType type = 1;
+    // optional .com.empire.msg.BattlePropertyType type = 1;
     if (has_type()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
@@ -376,7 +375,6 @@ void SCBoatExtraBPropertyMsg::Swap(SCBoatExtraBPropertyMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

@@ -29,7 +29,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 // Internal implementation detail -- do not call these.
@@ -118,7 +117,7 @@ class CSStartBuildMsg : public ::google::protobuf::Message {
   inline ::std::string* release_tmplid();
   inline void set_allocated_tmplid(::std::string* tmplid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSStartBuildMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSStartBuildMsg)
  private:
   inline void set_has_pos();
   inline void clear_has_pos();
@@ -227,7 +226,7 @@ class CSStartProduceMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 producecount() const;
   inline void set_producecount(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSStartProduceMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSStartProduceMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -332,7 +331,7 @@ class CSStartResearchMsg : public ::google::protobuf::Message {
   inline ::std::string* release_researchtmplid();
   inline void set_allocated_researchtmplid(::std::string* researchtmplid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSStartResearchMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSStartResearchMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -422,7 +421,7 @@ class CSStartUpdateMsg : public ::google::protobuf::Message {
   inline ::std::string* release_id();
   inline void set_allocated_id(::std::string* id);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSStartUpdateMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSStartUpdateMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -497,7 +496,7 @@ class CSQueryResearchInfoMsg : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSQueryResearchInfoMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSQueryResearchInfoMsg)
  private:
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
@@ -1004,7 +1003,6 @@ inline void CSStartUpdateMsg::set_allocated_id(::std::string* id) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

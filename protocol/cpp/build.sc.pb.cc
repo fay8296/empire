@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 namespace {
@@ -201,21 +200,20 @@ void protobuf_AddDesc_build_2esc_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\016build.sc.proto\022\026com.empire.msg.auto.sc"
-    "\032\014struct.proto\"`\n\017SCSystemInfoMsg\022\016\n\006inf"
-    "oId\030\001 \001(\t\022\016\n\006params\030\002 \003(\t\022-\n\005error\030\003 \001(\016"
-    "2\036.com.empire.msg.auto.ErrorType\"/\n\017SCSt"
-    "artBuildMsg\022\n\n\002id\030\001 \001(\t\022\020\n\010leftTime\030\002 \001("
-    "\005\"^\n\021SCStartProduceMsg\022\n\n\002id\030\001 \001(\t\022\020\n\010le"
-    "ftTime\030\002 \001(\005\022\025\n\rproduceTmplId\030\003 \001(\t\022\024\n\014p"
-    "roduceCount\030\004 \001(\005\"J\n\022SCStartResearchMsg\022"
-    "\n\n\002id\030\001 \001(\t\022\026\n\016researchTmplId\030\002 \001(\t\022\020\n\010l"
-    "eftTime\030\003 \001(\005\"0\n\020SCStartUpdateMsg\022\n\n\002id\030"
-    "\001 \001(\t\022\020\n\010leftTime\030\002 \001(\005\"=\n\021SCResearchInf"
-    "oMsg\022\026\n\016researchTmplId\030\001 \001(\t\022\020\n\010leftTime"
-    "\030\002 \001(\005", 486);
+    "\n\016build.sc.proto\022\021com.empire.msg.sc\032\014str"
+    "uct.proto\"[\n\017SCSystemInfoMsg\022\016\n\006infoId\030\001"
+    " \001(\t\022\016\n\006params\030\002 \003(\t\022(\n\005error\030\003 \001(\0162\031.co"
+    "m.empire.msg.ErrorType\"/\n\017SCStartBuildMs"
+    "g\022\n\n\002id\030\001 \001(\t\022\020\n\010leftTime\030\002 \001(\005\"^\n\021SCSta"
+    "rtProduceMsg\022\n\n\002id\030\001 \001(\t\022\020\n\010leftTime\030\002 \001"
+    "(\005\022\025\n\rproduceTmplId\030\003 \001(\t\022\024\n\014produceCoun"
+    "t\030\004 \001(\005\"J\n\022SCStartResearchMsg\022\n\n\002id\030\001 \001("
+    "\t\022\026\n\016researchTmplId\030\002 \001(\t\022\020\n\010leftTime\030\003 "
+    "\001(\005\"0\n\020SCStartUpdateMsg\022\n\n\002id\030\001 \001(\t\022\020\n\010l"
+    "eftTime\030\002 \001(\005\"=\n\021SCResearchInfoMsg\022\026\n\016re"
+    "searchTmplId\030\001 \001(\t\022\020\n\010leftTime\030\002 \001(\005", 476);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "build.sc.proto", &protobuf_RegisterTypes);
   SCSystemInfoMsg::default_instance_ = new SCSystemInfoMsg();
@@ -357,7 +355,7 @@ bool SCSystemInfoMsg::MergePartialFromCodedStream(
         break;
       }
 
-      // optional .com.empire.msg.auto.ErrorType error = 3;
+      // optional .com.empire.msg.ErrorType error = 3;
       case 3: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -366,8 +364,8 @@ bool SCSystemInfoMsg::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          if (::com::empire::msg::auto::ErrorType_IsValid(value)) {
-            set_error(static_cast< ::com::empire::msg::auto::ErrorType >(value));
+          if (::com::empire::msg::ErrorType_IsValid(value)) {
+            set_error(static_cast< ::com::empire::msg::ErrorType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(3, value);
           }
@@ -414,7 +412,7 @@ void SCSystemInfoMsg::SerializeWithCachedSizes(
       2, this->params(i), output);
   }
 
-  // optional .com.empire.msg.auto.ErrorType error = 3;
+  // optional .com.empire.msg.ErrorType error = 3;
   if (has_error()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       3, this->error(), output);
@@ -447,7 +445,7 @@ void SCSystemInfoMsg::SerializeWithCachedSizes(
       WriteStringToArray(2, this->params(i), target);
   }
 
-  // optional .com.empire.msg.auto.ErrorType error = 3;
+  // optional .com.empire.msg.ErrorType error = 3;
   if (has_error()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       3, this->error(), target);
@@ -471,7 +469,7 @@ int SCSystemInfoMsg::ByteSize() const {
           this->infoid());
     }
 
-    // optional .com.empire.msg.auto.ErrorType error = 3;
+    // optional .com.empire.msg.ErrorType error = 3;
     if (has_error()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->error());
@@ -2041,7 +2039,6 @@ void SCResearchInfoMsg::Swap(SCResearchInfoMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

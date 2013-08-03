@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 // Internal implementation detail -- do not call these.
@@ -96,12 +95,12 @@ class SCBoatExtraBPropertyMsg : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // optional .com.empire.msg.auto.BattlePropertyType type = 1;
+  // optional .com.empire.msg.BattlePropertyType type = 1;
   inline bool has_type() const;
   inline void clear_type();
   static const int kTypeFieldNumber = 1;
-  inline ::com::empire::msg::auto::BattlePropertyType type() const;
-  inline void set_type(::com::empire::msg::auto::BattlePropertyType value);
+  inline ::com::empire::msg::BattlePropertyType type() const;
+  inline void set_type(::com::empire::msg::BattlePropertyType value);
 
   // optional string value = 2;
   inline bool has_value() const;
@@ -115,7 +114,7 @@ class SCBoatExtraBPropertyMsg : public ::google::protobuf::Message {
   inline ::std::string* release_value();
   inline void set_allocated_value(::std::string* value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCBoatExtraBPropertyMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCBoatExtraBPropertyMsg)
  private:
   inline void set_has_type();
   inline void clear_has_type();
@@ -144,7 +143,7 @@ class SCBoatExtraBPropertyMsg : public ::google::protobuf::Message {
 
 // SCBoatExtraBPropertyMsg
 
-// optional .com.empire.msg.auto.BattlePropertyType type = 1;
+// optional .com.empire.msg.BattlePropertyType type = 1;
 inline bool SCBoatExtraBPropertyMsg::has_type() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -158,11 +157,11 @@ inline void SCBoatExtraBPropertyMsg::clear_type() {
   type_ = 1;
   clear_has_type();
 }
-inline ::com::empire::msg::auto::BattlePropertyType SCBoatExtraBPropertyMsg::type() const {
-  return static_cast< ::com::empire::msg::auto::BattlePropertyType >(type_);
+inline ::com::empire::msg::BattlePropertyType SCBoatExtraBPropertyMsg::type() const {
+  return static_cast< ::com::empire::msg::BattlePropertyType >(type_);
 }
-inline void SCBoatExtraBPropertyMsg::set_type(::com::empire::msg::auto::BattlePropertyType value) {
-  assert(::com::empire::msg::auto::BattlePropertyType_IsValid(value));
+inline void SCBoatExtraBPropertyMsg::set_type(::com::empire::msg::BattlePropertyType value) {
+  assert(::com::empire::msg::BattlePropertyType_IsValid(value));
   set_has_type();
   type_ = value;
 }
@@ -241,7 +240,6 @@ inline void SCBoatExtraBPropertyMsg::set_allocated_value(::std::string* value) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

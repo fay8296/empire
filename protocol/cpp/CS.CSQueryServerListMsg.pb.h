@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 // Internal implementation detail -- do not call these.
@@ -96,7 +95,7 @@ class CSQueryServerListMsg : public ::google::protobuf::Message {
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSQueryServerListMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSQueryServerListMsg)
  private:
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
@@ -123,7 +122,6 @@ class CSQueryServerListMsg : public ::google::protobuf::Message {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -82,12 +81,11 @@ void protobuf_AddDesc_CS_2eCSBindAccountMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\031CS.CSBindAccountMsg.proto\022\026com.empire."
-    "msg.auto.cs\032\014struct.proto\"7\n\020CSBindAccou"
-    "ntMsg\022\023\n\013accountName\030\001 \001(\t\022\016\n\006passwd\030\002 \001"
-    "(\t", 122);
+    "\n\031CS.CSBindAccountMsg.proto\022\021com.empire."
+    "msg.cs\032\014struct.proto\"7\n\020CSBindAccountMsg"
+    "\022\023\n\013accountName\030\001 \001(\t\022\016\n\006passwd\030\002 \001(\t", 117);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "CS.CSBindAccountMsg.proto", &protobuf_RegisterTypes);
   CSBindAccountMsg::default_instance_ = new CSBindAccountMsg();
@@ -387,7 +385,6 @@ void CSBindAccountMsg::Swap(CSBindAccountMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

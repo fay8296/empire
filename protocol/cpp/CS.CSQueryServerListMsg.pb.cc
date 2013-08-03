@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -80,11 +79,11 @@ void protobuf_AddDesc_CS_2eCSQueryServerListMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\035CS.CSQueryServerListMsg.proto\022\026com.emp"
-    "ire.msg.auto.cs\032\014struct.proto\"\026\n\024CSQuery"
-    "ServerListMsg", 93);
+    "\n\035CS.CSQueryServerListMsg.proto\022\021com.emp"
+    "ire.msg.cs\032\014struct.proto\"\026\n\024CSQueryServe"
+    "rListMsg", 88);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "CS.CSQueryServerListMsg.proto", &protobuf_RegisterTypes);
   CSQueryServerListMsg::default_instance_ = new CSQueryServerListMsg();
@@ -258,7 +257,6 @@ void CSQueryServerListMsg::Swap(CSQueryServerListMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

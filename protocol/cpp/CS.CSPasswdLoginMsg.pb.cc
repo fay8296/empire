@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -107,14 +106,14 @@ void protobuf_AddDesc_CS_2eCSPasswdLoginMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\031CS.CSPasswdLoginMsg.proto\022\026com.empire."
-    "msg.auto.cs\032\014struct.proto\"]\n\020CSPasswdLog"
-    "inMsg\022\022\n\ndeviceType\030\001 \001(\005\022\023\n\013accountName"
-    "\030\002 \001(\t\022\016\n\006passwd\030\003 \001(\t\022\020\n\010deviceId\030\004 \001(\t"
-    "\"7\n\020CSBindAccountMsg\022\023\n\013accountName\030\001 \001("
-    "\t\022\016\n\006passwd\030\002 \001(\t", 217);
+    "\n\031CS.CSPasswdLoginMsg.proto\022\021com.empire."
+    "msg.cs\032\014struct.proto\"]\n\020CSPasswdLoginMsg"
+    "\022\022\n\ndeviceType\030\001 \001(\005\022\023\n\013accountName\030\002 \001("
+    "\t\022\016\n\006passwd\030\003 \001(\t\022\020\n\010deviceId\030\004 \001(\t\"7\n\020C"
+    "SBindAccountMsg\022\023\n\013accountName\030\001 \001(\t\022\016\n\006"
+    "passwd\030\002 \001(\t", 212);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "CS.CSPasswdLoginMsg.proto", &protobuf_RegisterTypes);
   CSPasswdLoginMsg::default_instance_ = new CSPasswdLoginMsg();
@@ -795,7 +794,6 @@ void CSBindAccountMsg::Swap(CSBindAccountMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -173,14 +172,13 @@ void protobuf_AddDesc_build_2ecs_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\016build.cs.proto\022\026com.empire.msg.auto.cs"
-    "\".\n\017CSStartBuildMsg\022\013\n\003pos\030\001 \001(\005\022\016\n\006tmpl"
-    "Id\030\002 \001(\t\"L\n\021CSStartProduceMsg\022\n\n\002id\030\001 \001("
-    "\t\022\025\n\rproduceTmplId\030\002 \001(\t\022\024\n\014produceCount"
-    "\030\003 \001(\005\"8\n\022CSStartResearchMsg\022\n\n\002id\030\001 \001(\t"
-    "\022\026\n\016researchTmplId\030\002 \001(\t\"\036\n\020CSStartUpdat"
-    "eMsg\022\n\n\002id\030\001 \001(\t\"\030\n\026CSQueryResearchInfoM"
-    "sg", 282);
+    "\n\016build.cs.proto\022\021com.empire.msg.cs\".\n\017C"
+    "SStartBuildMsg\022\013\n\003pos\030\001 \001(\005\022\016\n\006tmplId\030\002 "
+    "\001(\t\"L\n\021CSStartProduceMsg\022\n\n\002id\030\001 \001(\t\022\025\n\r"
+    "produceTmplId\030\002 \001(\t\022\024\n\014produceCount\030\003 \001("
+    "\005\"8\n\022CSStartResearchMsg\022\n\n\002id\030\001 \001(\t\022\026\n\016r"
+    "esearchTmplId\030\002 \001(\t\"\036\n\020CSStartUpdateMsg\022"
+    "\n\n\002id\030\001 \001(\t\"\030\n\026CSQueryResearchInfoMsg", 277);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "build.cs.proto", &protobuf_RegisterTypes);
   CSStartBuildMsg::default_instance_ = new CSStartBuildMsg();
@@ -1456,7 +1454,6 @@ void CSQueryResearchInfoMsg::Swap(CSQueryResearchInfoMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

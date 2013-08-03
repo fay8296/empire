@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 namespace {
@@ -96,19 +95,18 @@ void protobuf_AddDesc_SC_2eSCPlayerInfoMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\030SC.SCPlayerInfoMsg.proto\022\026com.empire.m"
-    "sg.auto.sc\032\014struct.proto\"\316\002\n\017SCPlayerInf"
-    "oMsg\022\013\n\003sex\030\001 \001(\005\022\013\n\003lvl\030\002 \001(\005\022\025\n\rreputa"
-    "tionLvl\030\003 \001(\005\022\016\n\006govLvl\030\004 \001(\005\022\r\n\005jwLvl\030\005"
-    " \001(\005\022\013\n\003exp\030\006 \001(\005\022\017\n\007diamond\030\007 \001(\003\022\014\n\004go"
-    "ld\030\010 \001(\003\022\014\n\004iron\030\t \001(\003\022\014\n\004tree\030\n \001(\003\022\013\n\003"
-    "oil\030\013 \001(\003\022\022\n\nmagicStone\030\014 \001(\003\0222\n\nbuildIn"
-    "fos\030\r \003(\0132\036.com.empire.msg.auto.BuildInf"
-    "o\0220\n\tboatInfos\030\016 \003(\0132\035.com.empire.msg.au"
-    "to.BoatInfo\022\016\n\006vipLvl\030\017 \001(\003\022\014\n\004name\030\020 \001("
-    "\t", 401);
+    "\n\030SC.SCPlayerInfoMsg.proto\022\021com.empire.m"
+    "sg.sc\032\014struct.proto\"\304\002\n\017SCPlayerInfoMsg\022"
+    "\013\n\003sex\030\001 \001(\005\022\013\n\003lvl\030\002 \001(\005\022\025\n\rreputationL"
+    "vl\030\003 \001(\005\022\016\n\006govLvl\030\004 \001(\005\022\r\n\005jwLvl\030\005 \001(\005\022"
+    "\013\n\003exp\030\006 \001(\005\022\017\n\007diamond\030\007 \001(\003\022\014\n\004gold\030\010 "
+    "\001(\003\022\014\n\004iron\030\t \001(\003\022\014\n\004tree\030\n \001(\003\022\013\n\003oil\030\013"
+    " \001(\003\022\022\n\nmagicStone\030\014 \001(\003\022-\n\nbuildInfos\030\r"
+    " \003(\0132\031.com.empire.msg.BuildInfo\022+\n\tboatI"
+    "nfos\030\016 \003(\0132\030.com.empire.msg.BoatInfo\022\016\n\006"
+    "vipLvl\030\017 \001(\003\022\014\n\004name\030\020 \001(\t", 386);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "SC.SCPlayerInfoMsg.proto", &protobuf_RegisterTypes);
   SCPlayerInfoMsg::default_instance_ = new SCPlayerInfoMsg();
@@ -436,7 +434,7 @@ bool SCPlayerInfoMsg::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+      // repeated .com.empire.msg.BuildInfo buildInfos = 13;
       case 13: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -451,7 +449,7 @@ bool SCPlayerInfoMsg::MergePartialFromCodedStream(
         break;
       }
 
-      // repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+      // repeated .com.empire.msg.BoatInfo boatInfos = 14;
       case 14: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -577,13 +575,13 @@ void SCPlayerInfoMsg::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(12, this->magicstone(), output);
   }
 
-  // repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+  // repeated .com.empire.msg.BuildInfo buildInfos = 13;
   for (int i = 0; i < this->buildinfos_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       13, this->buildinfos(i), output);
   }
 
-  // repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+  // repeated .com.empire.msg.BoatInfo boatInfos = 14;
   for (int i = 0; i < this->boatinfos_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       14, this->boatinfos(i), output);
@@ -671,14 +669,14 @@ void SCPlayerInfoMsg::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(12, this->magicstone(), target);
   }
 
-  // repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+  // repeated .com.empire.msg.BuildInfo buildInfos = 13;
   for (int i = 0; i < this->buildinfos_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         13, this->buildinfos(i), target);
   }
 
-  // repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+  // repeated .com.empire.msg.BoatInfo boatInfos = 14;
   for (int i = 0; i < this->boatinfos_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
@@ -812,7 +810,7 @@ int SCPlayerInfoMsg::ByteSize() const {
     }
 
   }
-  // repeated .com.empire.msg.auto.BuildInfo buildInfos = 13;
+  // repeated .com.empire.msg.BuildInfo buildInfos = 13;
   total_size += 1 * this->buildinfos_size();
   for (int i = 0; i < this->buildinfos_size(); i++) {
     total_size +=
@@ -820,7 +818,7 @@ int SCPlayerInfoMsg::ByteSize() const {
         this->buildinfos(i));
   }
 
-  // repeated .com.empire.msg.auto.BoatInfo boatInfos = 14;
+  // repeated .com.empire.msg.BoatInfo boatInfos = 14;
   total_size += 1 * this->boatinfos_size();
   for (int i = 0; i < this->boatinfos_size(); i++) {
     total_size +=
@@ -957,7 +955,6 @@ void SCPlayerInfoMsg::Swap(SCPlayerInfoMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

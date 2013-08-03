@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -82,12 +81,11 @@ void protobuf_AddDesc_CS_2eCSQuickLoginMsg_2eproto() {
   already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::com::empire::msg::auto::protobuf_AddDesc_struct_2eproto();
+  ::com::empire::msg::protobuf_AddDesc_struct_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\030CS.CSQuickLoginMsg.proto\022\026com.empire.m"
-    "sg.auto.cs\032\014struct.proto\"7\n\017CSQuickLogin"
-    "Msg\022\022\n\ndeviceType\030\001 \001(\005\022\020\n\010deviceId\030\002 \001("
-    "\t", 121);
+    "\n\030CS.CSQuickLoginMsg.proto\022\021com.empire.m"
+    "sg.cs\032\014struct.proto\"7\n\017CSQuickLoginMsg\022\022"
+    "\n\ndeviceType\030\001 \001(\005\022\020\n\010deviceId\030\002 \001(\t", 116);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "CS.CSQuickLoginMsg.proto", &protobuf_RegisterTypes);
   CSQuickLoginMsg::default_instance_ = new CSQuickLoginMsg();
@@ -370,7 +368,6 @@ void CSQuickLoginMsg::Swap(CSQuickLoginMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

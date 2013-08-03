@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 // Internal implementation detail -- do not call these.
@@ -129,14 +128,14 @@ class SCSystemInfoMsg : public ::google::protobuf::Message {
   inline const ::google::protobuf::RepeatedPtrField< ::std::string>& params() const;
   inline ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_params();
 
-  // optional .com.empire.msg.auto.ErrorType error = 3;
+  // optional .com.empire.msg.ErrorType error = 3;
   inline bool has_error() const;
   inline void clear_error();
   static const int kErrorFieldNumber = 3;
-  inline ::com::empire::msg::auto::ErrorType error() const;
-  inline void set_error(::com::empire::msg::auto::ErrorType value);
+  inline ::com::empire::msg::ErrorType error() const;
+  inline void set_error(::com::empire::msg::ErrorType value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCSystemInfoMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCSystemInfoMsg)
  private:
   inline void set_has_infoid();
   inline void clear_has_infoid();
@@ -234,7 +233,7 @@ class SCStartBuildMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 lefttime() const;
   inline void set_lefttime(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCStartBuildMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCStartBuildMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -350,7 +349,7 @@ class SCStartProduceMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 producecount() const;
   inline void set_producecount(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCStartProduceMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCStartProduceMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -465,7 +464,7 @@ class SCStartResearchMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 lefttime() const;
   inline void set_lefttime(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCStartResearchMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCStartResearchMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -565,7 +564,7 @@ class SCStartUpdateMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 lefttime() const;
   inline void set_lefttime(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCStartUpdateMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCStartUpdateMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
@@ -662,7 +661,7 @@ class SCResearchInfoMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 lefttime() const;
   inline void set_lefttime(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCResearchInfoMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCResearchInfoMsg)
  private:
   inline void set_has_researchtmplid();
   inline void clear_has_researchtmplid();
@@ -805,7 +804,7 @@ SCSystemInfoMsg::mutable_params() {
   return &params_;
 }
 
-// optional .com.empire.msg.auto.ErrorType error = 3;
+// optional .com.empire.msg.ErrorType error = 3;
 inline bool SCSystemInfoMsg::has_error() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -819,11 +818,11 @@ inline void SCSystemInfoMsg::clear_error() {
   error_ = 1;
   clear_has_error();
 }
-inline ::com::empire::msg::auto::ErrorType SCSystemInfoMsg::error() const {
-  return static_cast< ::com::empire::msg::auto::ErrorType >(error_);
+inline ::com::empire::msg::ErrorType SCSystemInfoMsg::error() const {
+  return static_cast< ::com::empire::msg::ErrorType >(error_);
 }
-inline void SCSystemInfoMsg::set_error(::com::empire::msg::auto::ErrorType value) {
-  assert(::com::empire::msg::auto::ErrorType_IsValid(value));
+inline void SCSystemInfoMsg::set_error(::com::empire::msg::ErrorType value) {
+  assert(::com::empire::msg::ErrorType_IsValid(value));
   set_has_error();
   error_ = value;
 }
@@ -1474,7 +1473,6 @@ inline void SCResearchInfoMsg::set_lefttime(::google::protobuf::int32 value) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

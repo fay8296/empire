@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace sc {
 
 // Internal implementation detail -- do not call these.
@@ -103,26 +102,26 @@ class SCServerListMsg : public ::google::protobuf::Message {
   inline ::google::protobuf::int32 id() const;
   inline void set_id(::google::protobuf::int32 value);
 
-  // repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+  // repeated .com.empire.msg.ServerInfo serverInfos = 2;
   inline int serverinfos_size() const;
   inline void clear_serverinfos();
   static const int kServerInfosFieldNumber = 2;
-  inline const ::com::empire::msg::auto::ServerInfo& serverinfos(int index) const;
-  inline ::com::empire::msg::auto::ServerInfo* mutable_serverinfos(int index);
-  inline ::com::empire::msg::auto::ServerInfo* add_serverinfos();
-  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::ServerInfo >&
+  inline const ::com::empire::msg::ServerInfo& serverinfos(int index) const;
+  inline ::com::empire::msg::ServerInfo* mutable_serverinfos(int index);
+  inline ::com::empire::msg::ServerInfo* add_serverinfos();
+  inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::ServerInfo >&
       serverinfos() const;
-  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::ServerInfo >*
+  inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::ServerInfo >*
       mutable_serverinfos();
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.sc.SCServerListMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.sc.SCServerListMsg)
  private:
   inline void set_has_id();
   inline void clear_has_id();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
-  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::ServerInfo > serverinfos_;
+  ::google::protobuf::RepeatedPtrField< ::com::empire::msg::ServerInfo > serverinfos_;
   ::google::protobuf::int32 id_;
 
   mutable int _cached_size_;
@@ -164,27 +163,27 @@ inline void SCServerListMsg::set_id(::google::protobuf::int32 value) {
   id_ = value;
 }
 
-// repeated .com.empire.msg.auto.ServerInfo serverInfos = 2;
+// repeated .com.empire.msg.ServerInfo serverInfos = 2;
 inline int SCServerListMsg::serverinfos_size() const {
   return serverinfos_.size();
 }
 inline void SCServerListMsg::clear_serverinfos() {
   serverinfos_.Clear();
 }
-inline const ::com::empire::msg::auto::ServerInfo& SCServerListMsg::serverinfos(int index) const {
+inline const ::com::empire::msg::ServerInfo& SCServerListMsg::serverinfos(int index) const {
   return serverinfos_.Get(index);
 }
-inline ::com::empire::msg::auto::ServerInfo* SCServerListMsg::mutable_serverinfos(int index) {
+inline ::com::empire::msg::ServerInfo* SCServerListMsg::mutable_serverinfos(int index) {
   return serverinfos_.Mutable(index);
 }
-inline ::com::empire::msg::auto::ServerInfo* SCServerListMsg::add_serverinfos() {
+inline ::com::empire::msg::ServerInfo* SCServerListMsg::add_serverinfos() {
   return serverinfos_.Add();
 }
-inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::ServerInfo >&
+inline const ::google::protobuf::RepeatedPtrField< ::com::empire::msg::ServerInfo >&
 SCServerListMsg::serverinfos() const {
   return serverinfos_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::auto::ServerInfo >*
+inline ::google::protobuf::RepeatedPtrField< ::com::empire::msg::ServerInfo >*
 SCServerListMsg::mutable_serverinfos() {
   return &serverinfos_;
 }
@@ -193,7 +192,6 @@ SCServerListMsg::mutable_serverinfos() {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace sc
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

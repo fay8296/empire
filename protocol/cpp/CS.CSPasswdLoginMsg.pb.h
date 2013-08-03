@@ -30,7 +30,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 // Internal implementation detail -- do not call these.
@@ -140,7 +139,7 @@ class CSPasswdLoginMsg : public ::google::protobuf::Message {
   inline ::std::string* release_deviceid();
   inline void set_allocated_deviceid(::std::string* deviceid);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSPasswdLoginMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSPasswdLoginMsg)
  private:
   inline void set_has_devicetype();
   inline void clear_has_devicetype();
@@ -248,7 +247,7 @@ class CSBindAccountMsg : public ::google::protobuf::Message {
   inline ::std::string* release_passwd();
   inline void set_allocated_passwd(::std::string* passwd);
 
-  // @@protoc_insertion_point(class_scope:com.empire.msg.auto.cs.CSBindAccountMsg)
+  // @@protoc_insertion_point(class_scope:com.empire.msg.cs.CSBindAccountMsg)
  private:
   inline void set_has_accountname();
   inline void clear_has_accountname();
@@ -657,7 +656,6 @@ inline void CSBindAccountMsg::set_allocated_passwd(::std::string* passwd) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com

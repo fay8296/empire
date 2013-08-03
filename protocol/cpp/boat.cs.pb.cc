@@ -19,7 +19,6 @@
 namespace com {
 namespace empire {
 namespace msg {
-namespace auto {
 namespace cs {
 
 namespace {
@@ -82,8 +81,8 @@ void protobuf_AddDesc_boat_2ecs_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\rboat.cs.proto\022\026com.empire.msg.auto.cs\""
-    "$\n\022CSQueryBoatInfoMsg\022\016\n\006boatId\030\001 \001(\t", 77);
+    "\n\rboat.cs.proto\022\021com.empire.msg.cs\"$\n\022CS"
+    "QueryBoatInfoMsg\022\016\n\006boatId\030\001 \001(\t", 72);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "boat.cs.proto", &protobuf_RegisterTypes);
   CSQueryBoatInfoMsg::default_instance_ = new CSQueryBoatInfoMsg();
@@ -326,7 +325,6 @@ void CSQueryBoatInfoMsg::Swap(CSQueryBoatInfoMsg* other) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace cs
-}  // namespace auto
 }  // namespace msg
 }  // namespace empire
 }  // namespace com
