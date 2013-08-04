@@ -25,7 +25,8 @@ public class MainParse {
 	public String protoPath="/work/mypro/zhanjian/empire/protocol/protocol";
 	public String outPath="/work/mypro/zhanjian/empire/protocol";
 	public String packName="org.net.obj";
-
+	public String packName2="org/net/obj";
+	public String packName3="org::net::obj";
 	public List<String> ids;
 	public List<String> fileNames;
 	/**
@@ -166,9 +167,9 @@ public class MainParse {
 	{
 		try{
 			//输出消息类型
-			String java_path=outPath+"/java/org/net/MsgType.java";
+			String java_path=outPath+"/java/"+packName2+"/MsgType.java";
 			PrintWriter java_msg_type=new PrintWriter(java_path);
-			java_msg_type.println("package org.net;");
+			java_msg_type.println("package "+packName+";");
 			java_msg_type.println("public class MsgType");
 			java_msg_type.println("{");
 			int size=this.fileNames.size();
@@ -206,9 +207,9 @@ public class MainParse {
 			cpp_msg_type.close();
 
 
-			String java_factory_path=outPath+"/java/org/net/MessageFactory.java";
+			String java_factory_path=outPath+"/java/"+packName2+"/MessageFactory.java";
 			PrintWriter java_MessageFactory=new PrintWriter(java_factory_path);
-			java_MessageFactory.println("package org.net;");
+			java_MessageFactory.println("package "+packName+";");
 
 			for(String name :this.fileNames)
 			{
@@ -299,9 +300,9 @@ public class MainParse {
 
 
 
-			String java_service_path=outPath+"/java/org/net/Service.java";
+			String java_service_path=outPath+"/java/"+packName2+"Service.java";
 			PrintWriter java_service_out=new PrintWriter(java_service_path);
-			String Service_str="package org.net;\n"+
+			String Service_str="package "+packName+";\n"+
 					"public class Service {\n"+
 					"	public static Service server=null;\n"+
 					"	private Service()\n"+
@@ -351,7 +352,7 @@ public class MainParse {
 				String h_name=a[0]+"."+a[1]+".pb.h";
 				cpp_factory_path_cpp_out.println("#include \""+h_name+"\"");
 			}
-			cpp_factory_path_cpp_out.println("using namespace org::net::obj;");
+			cpp_factory_path_cpp_out.println("using namespace "+packName3+";");
 			String tmp1="static MessageFactory* factory=NULL;\n"+
 			"MessageFactory* MessageFactory::shareMessageFactory()\n"+
 			"{\n"+

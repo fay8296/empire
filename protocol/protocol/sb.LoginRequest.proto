@@ -1,5 +1,0 @@
-package org.net.obj;
-message LoginRequest{
-	optional int32 deviceType=1;
-	optional string deviceId=2;	
-}
