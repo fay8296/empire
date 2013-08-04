@@ -1,9 +1,0 @@
-import "struct.proto";
-
-package com.empire.msg.auto.sc;
-
-message SCServerListMsg{
-	optional int32 id = 1;
-	repeated ServerInfo serverInfos = 2;
-}
-
