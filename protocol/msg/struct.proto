@@ -1,4 +1,4 @@
-package com.empire.msg;
+package com.empire.msg.auto;
 
 enum MallItemState{
 	//Âô

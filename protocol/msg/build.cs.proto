@@ -1,4 +1,4 @@
-package com.empire.msg.cs;
+package com.empire.msg.auto.cs;
 
 
 message CSStartBuildMsg{

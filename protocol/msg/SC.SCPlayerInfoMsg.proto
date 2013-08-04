@@ -1,6 +1,6 @@
 import "struct.proto";
 
-package com.empire.msg.sc;
+package com.empire.msg.auto.sc;
 
 message SCPlayerInfoMsg{
 	optional int32 sex = 1;

@@ -365,11 +365,11 @@ public class MainParse {
 			
 			cpp_factory_path_cpp_out.println("void MessageFactory::parseMsg(ByteBuffer* buf)");
 			cpp_factory_path_cpp_out.println("{");
-			String tmp2="	int len=buf->readInt();\n"+
-						"	int msg_type=buf->readInt();";
+			String tmp2="	int len=buf->readShort();\n"+
+						"	int msg_type=buf->readShort();";
 						
 			cpp_factory_path_cpp_out.println(tmp2);
-			cpp_factory_path_cpp_out.println("	int body_len=len-8;");
+			cpp_factory_path_cpp_out.println("	int body_len=len-4;");
 			cpp_factory_path_cpp_out.println("	::google::protobuf::Message *msg_obj=NULL;");
 			cpp_factory_path_cpp_out.println("	switch (msg_type)");
 			cpp_factory_path_cpp_out.println("	{");
