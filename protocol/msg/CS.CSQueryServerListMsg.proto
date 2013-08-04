@@ -1,8 +1,0 @@
-import "struct.proto";
-
-package com.empire.msg.auto.cs;
-
-message CSQueryServerListMsg{
-	
-}
-
