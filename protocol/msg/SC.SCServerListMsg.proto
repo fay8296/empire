@@ -1,6 +1,6 @@
 import "struct.proto";
 
-package com.empire.msg.auto.sc;
+package com.empire.msg.sc;
 
 message SCServerListMsg{
 	optional int32 id = 1;

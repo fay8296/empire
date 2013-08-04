@@ -22,11 +22,11 @@ public class MainParse {
 
 
 	public String path="/work/mypro/zhanjian/empire/protocol/Í¨ÐÅ±í.xlsx";
-	public String protoPath="/work/mypro/zhanjian/empire/protocol/protocol";
-	public String outPath="/work/mypro/zhanjian/empire/protocol";
-	public String packName="org.net.obj";
-	public String packName2="org/net/obj";
-	public String packName3="org::net::obj";
+	public String protoPath="/work/mypro/zhanjian/empire/protocol/msg";
+	public String outPath="/work/mypro/zhanjian/empire/protocol/out";
+	public String packName="com.empire.msg.auto.cs";
+	public String packName2="com/empire/msg/auto/cs";
+	public String packName3="com::empire::msg::auto::cs";
 	public List<String> ids;
 	public List<String> fileNames;
 	/**

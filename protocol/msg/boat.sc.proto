@@ -1,6 +1,6 @@
 import "struct.proto";
 
-package com.empire.msg.auto.sc;
+package com.empire.msg.sc;
 
 message SCBoatExtraBPropertyMsg{
 	optional BattlePropertyType type = 1;
