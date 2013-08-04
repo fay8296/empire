@@ -1,0 +1,10 @@
+import "struct.proto";
+
+package com.empire.msg.auto.cs;
+
+
+
+message CSBindAccountMsg{
+	optional string accountName = 1;
+	optional string passwd = 2;	
+}

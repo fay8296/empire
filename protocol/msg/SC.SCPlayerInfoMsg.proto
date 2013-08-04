@@ -1,0 +1,23 @@
+import "struct.proto";
+
+package com.empire.msg.auto.sc;
+
+message SCPlayerInfoMsg{
+	optional int32 sex = 1;
+	optional int32 lvl = 2;
+	optional int32 reputationLvl = 3;
+	optional int32 govLvl = 4;
+	optional int32 jwLvl = 5;
+	optional int32 exp = 6;
+	optional int64 diamond = 7;
+	optional int64 gold = 8;
+	optional int64 iron = 9;
+	optional int64 tree = 10;
+	optional int64 oil = 11;
+	optional int64 magicStone = 12;
+	repeated BuildInfo buildInfos = 13;
+	repeated BoatInfo boatInfos = 14;
+	optional int64 vipLvl = 15;
+	optional string name = 16;
+}
+

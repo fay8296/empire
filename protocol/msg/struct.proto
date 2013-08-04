@@ -1,0 +1,50 @@
+package com.empire.msg.auto;
+
+enum MallItemState{
+	//Âô
+	SELL=0;
+	//·ÇÂô
+	UNSELL=1;	
+}
+
+enum BuildState{
+	BUILDING=0;
+	PRODUCING=1;
+	UPDATING=2;
+	RESEARCHING=3;
+}
+
+enum MessageType {
+	CS_USER_PASSWD=1;
+}
+
+enum ErrorType {
+     NET_DISCONN=1;
+}
+
+enum BattlePropertyType {
+	TEST=1;
+}
+
+message ServerInfo{
+	optional string ip=1;
+	optional string ports=2;
+	optional string name=3;
+}
+
+message BuildInfo {
+        optional string id=1;
+	optional string tmplId=2;
+	optional int32 lvl=3;
+	optional int32 pos=4;
+	optional BuildState state=5;
+	optional int32 leftTime=6;
+	optional string produceId=7;
+}
+
+message BoatInfo {
+	optional string id=1;
+	optional string tmplId=2;
+	optional int32 pos=3;
+	optional int32 count=4;
+}
